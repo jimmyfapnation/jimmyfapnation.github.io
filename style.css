@@ -1,0 +1,173 @@
+/* The main CSS file! You are free to study and copy snippets, 
+but please don't straight up use the whole file for your own website layout */
+
+:root {
+    --nord0: #2e3440;
+    --nord1: #3b4252;
+    --nord2: #434c5e;
+    --nord3: #4c566a;
+    --nord4: #d8dee9;
+    --nord5: #e5e9f0;
+    --nord6: #eceff4;
+    --nord7: #8fbcbb;
+    --nord8: #e2c4dc;
+    --nord9: #521a39;
+    --nord10: #5e81ac;
+    --nord11: #bf616a;
+    --nord12: #d08770;
+    --nord13: #ebcb8b;
+    --nord14: #a3be8c;
+    --nord15: #b48ead;
+}
+
+body {
+    font-family: consolas;
+    background-image: url(background.png);
+    color: var(--nord0);
+    background-size: cover;
+    line-height: 20px;
+    image-rendering: crisp-edges;
+    line-height: normal;
+}
+
+#nav {
+    width: auto;
+    position: absolute;
+    top: 2%;
+    left: 5%;
+}
+
+#intro {
+    width: 500px;
+    position: absolute;
+    left: 33%;
+    top: 16%;
+}
+
+#changelog {
+    width: 300px;
+    position: absolute;
+    left: 70%;
+    top: 50%;
+}
+
+#neighbors {
+    width: 250px;
+    position: absolute;
+    left: 10%;
+    top: 40%;
+}
+
+#chatbox {
+    width: 250px;
+    position: absolute;
+    left: 60%;
+    top: 10%;
+}
+
+#support {
+    width: 300px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+#doll {
+    width: 400px;
+    position: absolute;
+    left: 20%;
+    top: 42%;
+}
+
+.titlebox {
+    background-color: var(--nord8);
+    color: var(--nord3);
+    border: solid 2px var(--nord3);
+    padding: 4px;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0);
+    border-radius: 10px 10px 0px 0px;
+    padding-left: 10px;
+}
+
+.contentbox {
+    padding-right: 20px;
+    padding-left: 20px;
+    border: solid 2px var(--nord3);
+    border-top: none;
+    background-color: #ffffffeb;
+    padding-bottom: 20px;
+    overflow: auto;
+    min-height: 275px;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0);
+    border-radius: 0px 0px 10px 10px;
+}
+
+.title {
+    font-family: methode;
+    color: #4c566a;
+    font-size: 50px;
+}
+
+.icon {
+    text-align: center;
+    padding-right: 20px;
+    float: left
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: inherit;
+}
+
+.fish {
+    width: 400px;
+}
+
+.fishleft {
+    animation: scroll-left 20s linear infinite;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(1600%);
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 100%;
+    }
+
+    100% {
+        transform: translateX(-1000%);
+        opacity: 0;
+    }
+}
+
+.fishright {
+    animation: scroll-right 20s linear infinite;
+}
+
+@keyframes scroll-right {
+    0% {
+        transform: translateX(-1000%);
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 100%;
+    }
+
+    100% {
+        transform: translateX(2000%);
+        opacity: 0;
+    }
+}
